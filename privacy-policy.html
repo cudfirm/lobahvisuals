@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | LOBAH VISUALS</title>
+    <meta name="description" content="Privacy policy for LOBAH VISUALS' website and client communications.">
+    <meta name="robots" content="noindex">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    'hof-charcoal': '#111827',
+                    'hof-gold': '#C79A3D',
+                    'hof-ivory': '#F7F5F2',
+                    'hof-blush': '#E8B7B7',
+                },
+                fontFamily: { 'sans': ['Inter', 'sans-serif'] },
+            }
+        }
+    }
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-hof-ivory text-hof-charcoal font-sans antialiased">
+    <header class="py-6">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-extrabold tracking-tight">LOBAH<span class="text-hof-gold">VISUALS</span></a>
+            <a href="index.html" class="text-sm font-semibold text-hof-charcoal hover:text-hof-gold transition-colors flex items-center gap-1">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Home
+            </a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-16 max-w-3xl">
+        <h1 class="text-4xl md:text-5xl font-bold text-hof-charcoal">Privacy Policy</h1>
+        <p class="mt-4 text-sm text-gray-500 uppercase tracking-wide">Placeholder content — to be finalized with LOBAH VISUALS' data practices.</p>
+
+        <div class="mt-10 space-y-8 text-gray-700 leading-relaxed">
+            <section>
+                <h2 class="text-2xl font-bold text-hof-charcoal">1. Information We Collect</h2>
+                <p class="mt-2">We may collect basic contact details (name, phone number, email) when you reach out via WhatsApp, email or this website to discuss a booking.</p>
+            </section>
+            <section>
+                <h2 class="text-2xl font-bold text-hof-charcoal">2. How We Use Your Information</h2>
+                <p class="mt-2">Information is used solely to communicate about your project, prepare quotations, and deliver finished work. We do not sell client information to third parties.</p>
+            </section>
+            <section>
+                <h2 class="text-2xl font-bold text-hof-charcoal">3. Media &amp; Footage</h2>
+                <p class="mt-2">Photos and videos captured during a session are stored securely and used only for the agreed deliverables and, where permitted, portfolio purposes.</p>
+            </section>
+            <section>
+                <h2 class="text-2xl font-bold text-hof-charcoal">4. Contact</h2>
+                <p class="mt-2">Questions about this policy can be sent to <a href="mailto:hello@lobahvisuals.com" class="text-hof-gold hover:underline">hello@lobahvisuals.com</a>.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-hof-charcoal text-hof-ivory py-10 mt-16">
+        <div class="container mx-auto px-6 text-center text-sm text-gray-400">
+            © <span id="current-year"></span> LOBAH VISUALS. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

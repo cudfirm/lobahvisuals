@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions | LOBAH VISUALS</title>
+    <meta name="description" content="Terms and conditions for booking creative services with LOBAH VISUALS.">
+    <meta name="robots" content="noindex">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    'hof-charcoal': '#111827',
+                    'hof-gold': '#C79A3D',
+                    'hof-ivory': '#F7F5F2',
+                    'hof-blush': '#E8B7B7',
+                },
+                fontFamily: { 'sans': ['Inter', 'sans-serif'] },
+            }
+        }
+    }
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-hof-ivory text-hof-charcoal font-sans antialiased">
+    <header class="py-6">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-extrabold tracking-tight">LOBAH<span class="text-hof-gold">VISUALS</span></a>
+            <a href="index.html" class="text-sm font-semibold text-hof-charcoal hover:text-hof-gold transition-colors flex items-center gap-1">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Home
+            </a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-16 max-w-3xl">
+        <h1 class="text-4xl md:text-5xl font-bold text-hof-charcoal">Terms &amp; Conditions</h1>
+        <p class="mt-4 text-sm text-gray-500 uppercase tracking-wide">Placeholder content — to be finalized with LOBAH VISUALS' legal terms.</p>
+
+        <div class="mt-10 space-y-8 text-gray-700 leading-relaxed">
+            <section>
+                <h2 class="text-2xl font-bold text-hof-charcoal">1. Bookings &amp; Deposits</h2>
+                <p class="mt-2">A deposit is required to secure your session date. The remaining balance is due as agreed during booking, typically on or before delivery of final files.</p>
+            </section>
+            <section>
+                <h2 class="text-2xl font-bold text-hof-charcoal">2. Rescheduling &amp; Cancellations</h2>
+                <p class="mt-2">Please notify us as early as possible via WhatsApp if you need to reschedule. Cancellation and refund terms will be confirmed at the time of booking.</p>
+            </section>
+            <section>
+                <h2 class="text-2xl font-bold text-hof-charcoal">3. Usage Rights</h2>
+                <p class="mt-2">Final deliverables are licensed for the client's intended use as agreed at booking. LOBAH VISUALS may use select footage for portfolio and promotional purposes unless otherwise agreed in writing.</p>
+            </section>
+            <section>
+                <h2 class="text-2xl font-bold text-hof-charcoal">4. Turnaround Time</h2>
+                <p class="mt-2">Editing and delivery timelines vary by project scope and will be confirmed before booking is finalized.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-hof-charcoal text-hof-ivory py-10 mt-16">
+        <div class="container mx-auto px-6 text-center text-sm text-gray-400">
+            © <span id="current-year"></span> LOBAH VISUALS. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

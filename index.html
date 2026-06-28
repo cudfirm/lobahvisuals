@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOBAH VISUALS | Professional Videography &amp; Creative Content in Lagos</title>
+    <meta name="description" content="LOBAH VISUALS is a Lagos-based creative media brand crafting cinematic event coverage, fashion content, brand videos and documentaries. Book on WhatsApp today.">
+    <meta name="keywords" content="videographer Lagos, event videography, fashion videography, brand content creator, mobile videography, documentary production Nigeria">
+    <meta name="author" content="LOBAH VISUALS">
+    <link rel="canonical" href="https://lobahvisuals.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="LOBAH VISUALS | Professional Videography & Creative Content">
+    <meta property="og:description" content="Cinematic event coverage, fashion content, brand videos and documentaries. Book your session on WhatsApp today.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=1200&auto=format&fit=crop">
+    <meta property="og:url" content="https://lobahvisuals.com/">
+    <meta property="og:site_name" content="LOBAH VISUALS">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LOBAH VISUALS | Professional Videography & Creative Content">
+    <meta name="twitter:description" content="Cinematic event coverage, fashion content, brand videos and documentaries. Book your session on WhatsApp today.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=1200&auto=format&fit=crop">
+
+    <link rel="shortcut icon" href="https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=64&auto=format&fit=crop&fm=jpg" type="image/jpeg">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "LOBAH VISUALS",
+        "image": "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=1200&auto=format&fit=crop",
+        "description": "Creative media brand specializing in mobile videography, event coverage, fashion content, brand content, documentaries and voiceovers.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Lagos",
+            "addressCountry": "NG"
+        },
+        "priceRange": "$$",
+        "sameAs": [
+            "https://instagram.com/lobahvisuals",
+            "https://tiktok.com/@lobahvisuals"
+        ]
+    }
+    </script>
+
+    <!-- CDNs: Tailwind, jQuery, Fancybox, AOS, Swiper, Lucide -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom Tailwind Configuration -->
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    'hof-charcoal': '#111827',
+                    'hof-gold': '#C79A3D',
+                    'hof-ivory': '#F7F5F2',
+                    'hof-blush': '#E8B7B7',
+                },
+                fontFamily: {
+                    'sans': ['Inter', 'sans-serif'],
+                },
+            }
+        }
+    }
+    </script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-hof-ivory text-hof-charcoal font-sans antialiased">
+
+    <!-- ===== Header / Navbar ===== -->
+    <header id="navbar"
+        class="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-6xl mx-auto rounded-full bg-hof-ivory/80 backdrop-blur-lg shadow-md transition-all duration-300 z-50">
+        <div class="flex justify-between items-center px-6 py-4">
+            <a href="index.html" class="flex items-center gap-2" aria-label="LOBAH VISUALS Home">
+                <span class="text-xl md:text-2xl font-extrabold tracking-tight text-hof-charcoal">LOBAH<span class="text-hof-gold">VISUALS</span></span>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8" aria-label="Primary navigation">
+                <a href="#about" data-scroll class="text-hof-charcoal hover:text-hof-gold transition-colors">About</a>
+
+                <!-- Desktop Dropdown -->
+                <div class="relative group">
+                    <button class="flex items-center text-hof-charcoal hover:text-hof-gold transition-colors" aria-haspopup="true" aria-expanded="false">
+                        Work
+                        <i data-lucide="chevron-down"
+                            class="w-4 h-4 ml-1 transition-transform duration-300 group-hover:rotate-180"></i>
+                    </button>
+                    <div
+                        class="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-48 bg-hof-ivory rounded-lg shadow-xl p-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10 origin-top transform scale-95 group-hover:scale-100">
+                        <a href="#portfolio" data-scroll
+                            class="block px-4 py-2 text-hof-charcoal hover:bg-hof-blush/50 rounded-md">Portfolio</a>
+                        <a href="#gallery" data-scroll
+                            class="block px-4 py-2 text-hof-charcoal hover:bg-hof-blush/50 rounded-md">Gallery</a>
+                        <a href="#services" data-scroll
+                            class="block px-4 py-2 text-hof-charcoal hover:bg-hof-blush/50 rounded-md">Services</a>
+                        <a href="#process" data-scroll
+                            class="block px-4 py-2 text-hof-charcoal hover:bg-hof-blush/50 rounded-md">Booking Process</a>
+                        <a href="#faq" data-scroll
+                            class="block px-4 py-2 text-hof-charcoal hover:bg-hof-blush/50 rounded-md">FAQ</a>
+                    </div>
+                </div>
+
+                <a href="#consultation" data-scroll class="text-hof-charcoal hover:text-hof-gold transition-colors">Consultation</a>
+                <a href="#testimonials" data-scroll class="text-hof-charcoal hover:text-hof-gold transition-colors">Reviews</a>
+                <a href="#contact" data-scroll class="text-hof-charcoal hover:text-hof-gold transition-colors">Contact</a>
+            </nav>
+
+            <a href="https://wa.me/2340000000000" target="_blank" rel="noopener"
+                class="hidden md:inline-flex items-center gap-2 px-5 py-2.5 bg-green-500 text-white text-sm font-semibold rounded-full shadow-md hover:bg-green-600 transition-colors">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                WhatsApp
+            </a>
+
+            <button id="menu-toggle" class="md:hidden" aria-label="Open menu" aria-expanded="false" aria-controls="menu-overlay">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===== Full Screen Overlay Menu ===== -->
+    <div id="menu-overlay" class="fixed inset-0 bg-hof-charcoal/95 z-40 flex items-center justify-center">
+        <nav class="flex flex-col items-center space-y-6 mt-10" aria-label="Mobile navigation">
+            <a href="#about" data-scroll
+                class="text-xl font-bold text-hof-ivory hover:text-hof-gold transition-colors">About</a>
+            <!-- Mobile Dropdown -->
+            <div class="text-center">
+                <button id="mobile-dropdown-toggle"
+                    class="text-xl font-bold text-hof-ivory hover:text-hof-gold transition-colors flex items-center" aria-expanded="false" aria-controls="mobile-dropdown">
+                    Work
+                    <i data-lucide="chevron-down" class="w-8 h-8 ml-2"></i>
+                </button>
+                <div id="mobile-dropdown" class="hidden flex-col items-center space-y-4 mt-4">
+                    <a href="#portfolio" data-scroll
+                        class="text-xl font-bold text-hof-ivory/80 hover:text-hof-gold">Portfolio</a>
+                    <a href="#gallery" data-scroll
+                        class="text-xl font-bold text-hof-ivory/80 hover:text-hof-gold">Gallery</a>
+                    <a href="#services" data-scroll class="text-xl font-bold text-hof-ivory/80 hover:text-hof-gold">Services</a>
+                    <a href="#process" data-scroll class="text-xl font-bold text-hof-ivory/80 hover:text-hof-gold">Booking Process</a>
+                    <a href="#faq" data-scroll class="text-xl font-bold text-hof-ivory/80 hover:text-hof-gold">FAQ</a>
+                </div>
+            </div>
+
+            <a href="#consultation" data-scroll
+                class="text-xl font-bold text-hof-ivory hover:text-hof-gold transition-colors">Consultation</a>
+            <a href="#testimonials" data-scroll class="text-xl font-bold text-hof-ivory hover:text-hof-gold transition-colors">Reviews</a>
+            <a href="#contact" data-scroll
+                class="text-xl font-bold text-hof-ivory hover:text-hof-gold transition-colors">Contact</a>
+
+            <a href="https://wa.me/2340000000000" target="_blank" rel="noopener"
+                class="inline-flex items-center gap-2 mt-2 px-6 py-3 bg-green-500 text-white font-semibold rounded-full shadow-md hover:bg-green-600 transition-colors">
+                <i data-lucide="message-circle" class="w-5 h-5"></i>
+                Chat on WhatsApp
+            </a>
+
+            <!-- Social Icons in Menu -->
+            <div class="flex space-x-6 pt-8">
+                <a href="https://instagram.com/lobahvisuals" target="_blank" rel="noopener" aria-label="LOBAH VISUALS on Instagram" class="text-hof-ivory hover:text-hof-gold transition-colors">
+                    <i data-lucide="instagram" class="w-6 h-6"></i>
+                </a>
+                <a href="https://tiktok.com/@lobahvisuals" target="_blank" rel="noopener" aria-label="LOBAH VISUALS on TikTok" class="text-hof-ivory hover:text-hof-gold transition-colors">
+                    <i data-lucide="music-2" class="w-6 h-6"></i>
+                </a>
+                <a href="https://wa.me/2340000000000" target="_blank" rel="noopener" aria-label="Message LOBAH VISUALS on WhatsApp" class="text-hof-ivory hover:text-hof-gold transition-colors">
+                    <i data-lucide="message-circle" class="w-6 h-6"></i>
+                </a>
+            </div>
+        </nav>
+
+    </div>
+
+    <!-- ===== Main Content ===== -->
+    <main>
+        <!-- ===== Hero Section ===== -->
+        <section id="hero" class="min-h-screen flex items-center pt-28">
+            <div class="container mx-auto px-6 grid md:grid-cols-12 items-center gap-12">
+                <!-- Left Content -->
+                <div class="hero-content-left text-center md:text-left md:col-span-5" data-aos="fade-right">
+                    <h1 class="text-5xl md:text-7xl font-extrabold text-hof-charcoal leading-tight">
+                        Stories Worth
+                        <span class="block text-hof-gold">Watching Twice</span>
+                    </h1>
+                    <p class="mt-6 text-lg text-gray-600 max-w-lg mx-auto md:mx-0">
+                        LOBAH VISUALS turns your event, brand or moment into cinematic content that gets remembered, reshared and re-watched — delivered fast, without the back-and-forth.
+                    </p>
+                    <div class="flex flex-col sm:flex-row sm:flex-wrap items-center justify-center md:justify-start gap-4 mt-10">
+                        <a href="https://wa.me/2340000000000" target="_blank" rel="noopener"
+                            class="inline-flex items-center gap-2 px-8 py-4 bg-green-500 text-white text-lg font-semibold rounded-full shadow-lg hover:bg-green-600 transition-all transform hover:scale-105">
+                            <i data-lucide="message-circle" class="w-5 h-5"></i>
+                            Book on WhatsApp
+                        </a>
+                        <a href="#portfolio" data-scroll
+                            class="inline-block px-8 py-4 bg-hof-gold text-white text-lg font-semibold rounded-full shadow-lg hover:bg-opacity-90 transition-all transform hover:scale-105">
+                            View Our Work
+                        </a>
+                        <a href="#consultation" data-scroll
+                            class="inline-block px-8 py-4 bg-white text-hof-charcoal text-lg font-semibold rounded-full shadow-lg border border-gray-200 hover:bg-gray-50 transition-all transform hover:scale-105">
+                            Book Consultation
+                        </a>
+                    </div>
+                </div>
+                <!-- Right Image -->
+                <div class="hero-content-right md:col-span-7 h-[60vh] md:h-[80vh] relative" data-aos="fade-left"
+                    data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=1200&auto=format&fit=crop" alt="LOBAH VISUALS videographer filming an event with a professional camera"
+                        class="w-full h-full object-cover rounded-3xl shadow-2xl" loading="lazy">
+
+                    <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?q=80&w=600&auto=format&fit=crop" alt="Close-up detail of cinema camera gear used by LOBAH VISUALS"
+                        class="absolute -bottom-12 -left-12 w-48 h-64 md:w-56 md:h-72 object-cover rounded-2xl shadow-xl border-4 border-hof-ivory"
+                        data-aos="fade-up" data-aos-delay="300" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== About Section ===== -->
+        <section id="about" class="py-24 bg-white">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+                <!-- Creative Director Photo -->
+                <div data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1500051638674-ff996a0ec29e?q=80&w=800&auto=format&fit=crop" alt="LOBAH VISUALS creative director on set with a cinema camera"
+                        class="rounded-3xl shadow-xl w-full object-cover" loading="lazy" style="height:600px">
+                </div>
+                <!-- About Content -->
+                <div data-aos="fade-left">
+                    <span class="text-hof-gold font-semibold tracking-widest uppercase">Who We Are</span>
+                    <h2 class="text-4xl md:text-5xl font-bold text-hof-charcoal mt-2">
+                        Behind the Lens at LOBAH VISUALS
+                    </h2>
+                    <p class="mt-6 text-gray-600 text-lg">
+                        LOBAH VISUALS is a Lagos-based creative media brand built on one belief: every brand, event
+                        and milestone has a story worth telling well. We blend mobile-first videography with
+                        cinematic editing to create content that looks expensive without the expensive turnaround
+                        time.
+                    </p>
+                    <p class="mt-4 text-gray-600">
+                        From weddings and corporate events to fashion films and product launches, we handle the
+                        creative direction, filming, editing and delivery — so you can focus on the moment, not the
+                        logistics.
+                    </p>
+                    <!-- Animated Counters -->
+                    <div id="counters" class="grid grid-cols-3 gap-4 mt-10 text-center">
+                        <div>
+                            <span class="counter-value text-5xl font-bold text-hof-gold" data-target="150">0</span>
+                            <span class="block text-sm text-gray-500 mt-1">Projects Delivered</span>
+                        </div>
+                        <div>
+                            <span class="counter-value text-5xl font-bold text-hof-gold" data-target="80">0</span>
+                            <span class="block text-sm text-gray-500 mt-1">Happy Clients</span>
+                        </div>
+                        <div>
+                            <span class="counter-value text-5xl font-bold text-hof-gold" data-target="24">0</span>
+                            <span class="block text-sm text-gray-500 mt-1">Hour Avg. Turnaround*</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-400 mt-3">*Turnaround time varies by project scope and is confirmed during consultation.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Featured Portfolio Showcase ===== -->
+        <section id="portfolio" class="py-24 bg-hof-ivory overflow-hidden">
+            <div class="container mx-auto px-6">
+                <span class="block text-center text-hof-gold font-semibold tracking-widest uppercase" data-aos="fade-up">Featured Work</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-hof-charcoal text-center mt-2" data-aos="fade-up">
+                    Portfolio Showcase
+                </h2>
+                <p class="text-lg text-gray-600 text-center max-w-2xl mx-auto mt-4" data-aos="fade-up"
+                    data-aos-delay="100">
+                    A look at the events, brands and stories we've brought to life. Swipe through, or tap any
+                    project to watch it in full.
+                </p>
+            </div>
+
+            <!-- Swiper -->
+            <div class="swiper-container collections-slider mt-12" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper-wrapper py-8 px-4">
+                    <!-- Project 1 -->
+                    <div class="swiper-slide">
+                        <a href="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1600&auto=format&fit=crop"
+                            data-fancybox="portfolio"
+                            data-caption="Lagos Wedding Highlights — full-day event coverage, edited into a 4-minute cinematic recap."
+                            class="rounded-2xl shadow-lg overflow-hidden group relative block transform transition-transform duration-300 h-full">
+                            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=800&auto=format&fit=crop" alt="Wedding event coverage by LOBAH VISUALS"
+                                class="w-full h-full object-cover" loading="lazy">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent transition-all duration-300 group-hover:from-black/90">
+                                <div class="absolute bottom-0 left-0 p-6">
+                                    <span class="text-xs font-semibold uppercase tracking-wider text-hof-gold">Event Coverage</span>
+                                    <h3 class="text-2xl font-bold text-white mt-1">Lagos Wedding Highlights</h3>
+                                    <p class="text-sm text-gray-300 mt-1">A full-day celebration, distilled into one cinematic recap.</p>
+                                    <span
+                                        class="flex mt-4 px-5 py-2 bg-hof-gold text-white justify-center text-sm font-semibold rounded-full w-max opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                                        Watch Project
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="swiper-slide">
+                        <a href="https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=1600&auto=format&fit=crop"
+                            data-fancybox="portfolio"
+                            data-caption="Runway Edit — fast-paced fashion film for a Lagos designer's collection launch."
+                            class="rounded-2xl shadow-lg overflow-hidden group relative block transform transition-transform duration-300 h-full">
+                            <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=800&auto=format&fit=crop" alt="Fashion content film by LOBAH VISUALS"
+                                class="w-full h-full object-cover" loading="lazy">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent transition-all duration-300 group-hover:from-black/90">
+                                <div class="absolute bottom-0 left-0 p-6">
+                                    <span class="text-xs font-semibold uppercase tracking-wider text-hof-gold">Fashion Content</span>
+                                    <h3 class="text-2xl font-bold text-white mt-1">Runway Edit</h3>
+                                    <p class="text-sm text-gray-300 mt-1">A fast-paced fashion film for a Lagos designer's launch.</p>
+                                    <span
+                                        class="flex mt-4 px-5 py-2 bg-hof-gold text-white justify-center text-sm font-semibold rounded-full w-max opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                                        Watch Project
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="swiper-slide">
+                        <a href="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1600&auto=format&fit=crop"
+                            data-fancybox="portfolio"
+                            data-caption="Skincare Launch — product-focused brand video shot for an e-commerce campaign."
+                            class="rounded-2xl shadow-lg overflow-hidden group relative block transform transition-transform duration-300 h-full">
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=800&auto=format&fit=crop" alt="Product video for skincare brand by LOBAH VISUALS"
+                                class="w-full h-full object-cover" loading="lazy">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent transition-all duration-300 group-hover:from-black/90">
+                                <div class="absolute bottom-0 left-0 p-6">
+                                    <span class="text-xs font-semibold uppercase tracking-wider text-hof-gold">Product Content</span>
+                                    <h3 class="text-2xl font-bold text-white mt-1">Skincare Launch</h3>
+                                    <p class="text-sm text-gray-300 mt-1">A clean, conversion-focused video for an e-commerce drop.</p>
+                                    <span
+                                        class="flex mt-4 px-5 py-2 bg-hof-gold text-white justify-center text-sm font-semibold rounded-full w-max opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                                        Watch Project
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Project 4 -->
+                    <div class="swiper-slide">
+                        <a href="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1600&auto=format&fit=crop"
+                            data-fancybox="portfolio"
+                            data-caption="Founder's Journey — short-form documentary profiling a Lagos small business owner."
+                            class="rounded-2xl shadow-lg overflow-hidden group relative block transform transition-transform duration-300 h-full">
+                            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=800&auto=format&fit=crop" alt="Documentary production still by LOBAH VISUALS"
+                                class="w-full h-full object-cover" loading="lazy">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent transition-all duration-300 group-hover:from-black/90">
+                                <div class="absolute bottom-0 left-0 p-6">
+                                    <span class="text-xs font-semibold uppercase tracking-wider text-hof-gold">Documentary</span>
+                                    <h3 class="text-2xl font-bold text-white mt-1">Founder's Journey</h3>
+                                    <p class="text-sm text-gray-300 mt-1">A short documentary profiling a Lagos small business owner.</p>
+                                    <span
+                                        class="flex mt-4 px-5 py-2 bg-hof-gold text-white justify-center text-sm font-semibold rounded-full w-max opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                                        Watch Project
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Project 5 -->
+                    <div class="swiper-slide">
+                        <a href="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1600&auto=format&fit=crop"
+                            data-fancybox="portfolio"
+                            data-caption="Studio Walkthrough — interior walkthrough video for a creative co-working space."
+                            class="rounded-2xl shadow-lg overflow-hidden group relative block transform transition-transform duration-300 h-full">
+                            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=800&auto=format&fit=crop" alt="Walkthrough video still by LOBAH VISUALS"
+                                class="w-full h-full object-cover" loading="lazy">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent transition-all duration-300 group-hover:from-black/90">
+                                <div class="absolute bottom-0 left-0 p-6">
+                                    <span class="text-xs font-semibold uppercase tracking-wider text-hof-gold">Walkthrough</span>
+                                    <h3 class="text-2xl font-bold text-white mt-1">Studio Walkthrough</h3>
+                                    <p class="text-sm text-gray-300 mt-1">An interior walkthrough for a creative co-working space.</p>
+                                    <span
+                                        class="flex mt-4 px-5 py-2 bg-hof-gold text-white justify-center text-sm font-semibold rounded-full w-max opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                                        Watch Project
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination relative mt-8"></div>
+            </div>
+
+            <div class="text-center mt-4" data-aos="fade-up">
+                <a href="#gallery" data-scroll class="inline-block px-8 py-3 bg-white text-hof-charcoal font-semibold rounded-full shadow-md border border-gray-200 hover:bg-gray-50 transition-colors">
+                    View More Work
+                </a>
+            </div>
+        </section>
+
+        <!-- ===== Gallery / More Work Section ===== -->
+        <section id="gallery" class="pt-24 pb-32 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-bold text-hof-charcoal text-center" data-aos="fade-up">
+                    More From the Field
+                </h2>
+                <p class="text-lg text-gray-600 text-center max-w-2xl mx-auto mt-4" data-aos="fade-up"
+                    data-aos-delay="100">
+                    Behind-the-scenes moments and standout frames from recent shoots.
+                </p>
+
+                <!-- Responsive Grid -->
+                <div class="mt-12 masonry-gallery" data-aos="fade-up" data-aos-delay="200">
+                    <a href="https://images.unsplash.com/photo-1478720568477-152d9b164e26?q=80&w=1200&auto=format&fit=crop" data-fancybox="gallery"
+                        data-caption="On location filming a brand campaign" class="masonry-item" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?q=80&w=600&auto=format&fit=crop" alt="LOBAH VISUALS on location filming a brand campaign"
+                            class="w-full h-full object-cover rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
+                            loading="lazy">
+                    </a>
+                    <a href="https://images.unsplash.com/photo-1605648916361-9bc12ad6a569?q=80&w=1200&auto=format&fit=crop" data-fancybox="gallery"
+                        data-caption="Mobile videography setup for a same-day social reel" class="masonry-item" data-aos="fade-up"
+                        data-aos-delay="300">
+                        <img src="https://images.unsplash.com/photo-1605648916361-9bc12ad6a569?q=80&w=600&auto=format&fit=crop" alt="Mobile videography setup for a same-day social reel"
+                            class="w-full h-full object-cover rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
+                            loading="lazy">
+                    </a>
+                    <a href="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=1200&auto=format&fit=crop" data-fancybox="gallery"
+                        data-caption="Capturing candid moments at a corporate event" class="masonry-item" data-aos="fade-up"
+                        data-aos-delay="400">
+                        <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=600&auto=format&fit=crop" alt="Capturing candid moments at a corporate event"
+                            class="w-full h-full object-cover rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
+                            loading="lazy">
+                    </a>
+                    <a href="https://images.unsplash.com/photo-1500051638674-ff996a0ec29e?q=80&w=1200&auto=format&fit=crop" data-fancybox="gallery" data-caption="Reviewing footage during a creative direction session"
+                        class="masonry-item" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1500051638674-ff996a0ec29e?q=80&w=600&auto=format&fit=crop" alt="Reviewing footage during a creative direction session"
+                            class="w-full h-full object-cover rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
+                            loading="lazy">
+                    </a>
+                    <a href="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1200&auto=format&fit=crop" data-fancybox="gallery" data-caption="Behind the scenes of a documentary shoot"
+                        class="masonry-item" data-aos="fade-up" data-aos-delay="300">
+                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=600&auto=format&fit=crop" alt="Behind the scenes of a documentary shoot"
+                            class="w-full h-full object-cover rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
+                            loading="lazy">
+                    </a>
+                    <a href="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1200&auto=format&fit=crop" data-fancybox="gallery"
+                        data-caption="Product setup for an e-commerce video shoot" class="masonry-item" data-aos="fade-up"
+                        data-aos-delay="400">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=600&auto=format&fit=crop" alt="Product setup for an e-commerce video shoot"
+                            class="w-full h-full object-cover rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
+                            loading="lazy">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Services Section ===== -->
+        <section id="services" class="py-24 bg-hof-blush/20">
+            <div class="container mx-auto px-6">
+                <span class="block text-center text-hof-gold font-semibold tracking-widest uppercase" data-aos="fade-up">What We Offer</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-hof-charcoal text-center mt-2" data-aos="fade-up">
+                    Services
+                </h2>
+                <p class="text-lg text-gray-600 text-center max-w-2xl mx-auto mt-4" data-aos="fade-up" data-aos-delay="100">
+                    From a single reel to a full documentary, here's how we can help tell your story.
+                </p>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+                    <!-- Service 1 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                        <div class="inline-block p-4 bg-hof-gold/10 rounded-full">
+                            <i data-lucide="camera" class="w-7 h-7 text-hof-gold"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-hof-charcoal mt-5">Event Coverage</h3>
+                        <p class="mt-3 text-gray-600 text-sm">Full coverage for weddings, parties, conferences and launches, edited into a highlight reel you'll actually want to rewatch.</p>
+                        <p class="mt-3 text-sm text-gray-500"><span class="font-semibold text-hof-charcoal">Best for:</span> couples, event planners, corporate teams.</p>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                        <div class="inline-block p-4 bg-hof-gold/10 rounded-full">
+                            <i data-lucide="smartphone" class="w-7 h-7 text-hof-gold"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-hof-charcoal mt-5">Mobile Videography</h3>
+                        <p class="mt-3 text-gray-600 text-sm">Fast, high-quality video shot and edited for social-first content — perfect when you need it turned around quickly.</p>
+                        <p class="mt-3 text-sm text-gray-500"><span class="font-semibold text-hof-charcoal">Best for:</span> creators, small businesses, influencers.</p>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                        <div class="inline-block p-4 bg-hof-gold/10 rounded-full">
+                            <i data-lucide="shirt" class="w-7 h-7 text-hof-gold"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-hof-charcoal mt-5">Fashion Content</h3>
+                        <p class="mt-3 text-gray-600 text-sm">Editorial-style fashion films and lookbooks that capture movement, texture and mood for designers and stylists.</p>
+                        <p class="mt-3 text-sm text-gray-500"><span class="font-semibold text-hof-charcoal">Best for:</span> designers, boutiques, stylists.</p>
+                    </div>
+                    <!-- Service 4 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                        <div class="inline-block p-4 bg-hof-gold/10 rounded-full">
+                            <i data-lucide="package" class="w-7 h-7 text-hof-gold"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-hof-charcoal mt-5">Product Content</h3>
+                        <p class="mt-3 text-gray-600 text-sm">Clean, conversion-ready product videos for e-commerce listings, ads and catalog pages.</p>
+                        <p class="mt-3 text-sm text-gray-500"><span class="font-semibold text-hof-charcoal">Best for:</span> online stores, retail brands.</p>
+                    </div>
+                    <!-- Service 5 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                        <div class="inline-block p-4 bg-hof-gold/10 rounded-full">
+                            <i data-lucide="film" class="w-7 h-7 text-hof-gold"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-hof-charcoal mt-5">Documentary Production</h3>
+                        <p class="mt-3 text-gray-600 text-sm">Longer-form storytelling for founder profiles, brand histories and personal projects, shot with care.</p>
+                        <p class="mt-3 text-sm text-gray-500"><span class="font-semibold text-hof-charcoal">Best for:</span> founders, NGOs, personal legacy projects.</p>
+                    </div>
+                    <!-- Service 6 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                        <div class="inline-block p-4 bg-hof-gold/10 rounded-full">
+                            <i data-lucide="home" class="w-7 h-7 text-hof-gold"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-hof-charcoal mt-5">Walkthrough Videos</h3>
+                        <p class="mt-3 text-gray-600 text-sm">Smooth, well-lit walkthroughs for spaces, studios and showrooms that help people picture themselves there.</p>
+                        <p class="mt-3 text-sm text-gray-500"><span class="font-semibold text-hof-charcoal">Best for:</span> real estate, studios, hospitality.</p>
+                    </div>
+                    <!-- Service 7 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                        <div class="inline-block p-4 bg-hof-gold/10 rounded-full">
+                            <i data-lucide="mic" class="w-7 h-7 text-hof-gold"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-hof-charcoal mt-5">Voiceovers</h3>
+                        <p class="mt-3 text-gray-600 text-sm">Clear, natural voiceover recording to give your video the right tone, whether that's warm, punchy or formal.</p>
+                        <p class="mt-3 text-sm text-gray-500"><span class="font-semibold text-hof-charcoal">Best for:</span> ads, explainer videos, documentaries.</p>
+                    </div>
+                    <!-- Service 8 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                        <div class="inline-block p-4 bg-hof-gold/10 rounded-full">
+                            <i data-lucide="clapperboard" class="w-7 h-7 text-hof-gold"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-hof-charcoal mt-5">Creative Direction</h3>
+                        <p class="mt-3 text-gray-600 text-sm">Concept development and on-set direction to make sure every shoot has a clear, cohesive creative vision.</p>
+                        <p class="mt-3 text-sm text-gray-500"><span class="font-semibold text-hof-charcoal">Best for:</span> brands planning a campaign or shoot day.</p>
+                    </div>
+                    <!-- Service 9 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                        <div class="inline-block p-4 bg-hof-gold/10 rounded-full">
+                            <i data-lucide="lightbulb" class="w-7 h-7 text-hof-gold"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-hof-charcoal mt-5">Paid Consultation</h3>
+                        <p class="mt-3 text-gray-600 text-sm">A focused one-on-one session to plan your content strategy, shot list or shoot day — even if you're not booking production yet.</p>
+                        <p class="mt-3 text-sm text-gray-500"><span class="font-semibold text-hof-charcoal">Best for:</span> anyone planning a shoot or content calendar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Why Choose LOBAH VISUALS Section ===== -->
+        <section id="why-us" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <span class="block text-center text-hof-gold font-semibold tracking-widest uppercase" data-aos="fade-up">Why Clients Stay</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-hof-charcoal text-center mt-2" data-aos="fade-up">
+                    Why Choose LOBAH VISUALS
+                </h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                        <div class="inline-block p-4 bg-hof-gold/10 rounded-full">
+                            <i data-lucide="book-open" class="w-7 h-7 text-hof-gold"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-hof-charcoal mt-4">Storytelling First</h3>
+                        <p class="mt-2 text-gray-600 text-sm">We shoot for narrative, not just footage, so the final edit actually says something.</p>
+                    </div>
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                        <div class="inline-block p-4 bg-hof-gold/10 rounded-full">
+                            <i data-lucide="scissors" class="w-7 h-7 text-hof-gold"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-hof-charcoal mt-4">Professional Editing</h3>
+                        <p class="mt-2 text-gray-600 text-sm">Color, pacing and sound are treated as seriously as the footage itself.</p>
+                    </div>
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                        <div class="inline-block p-4 bg-hof-gold/10 rounded-full">
+                            <i data-lucide="zap" class="w-7 h-7 text-hof-gold"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-hof-charcoal mt-4">Fast Turnaround</h3>
+                        <p class="mt-2 text-gray-600 text-sm">Clear timelines agreed up front, with no chasing for your final files.</p>
+                    </div>
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+                        <div class="inline-block p-4 bg-hof-gold/10 rounded-full">
+                            <i data-lucide="message-circle" class="w-7 h-7 text-hof-gold"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-hof-charcoal mt-4">Reliable Communication</h3>
+                        <p class="mt-2 text-gray-600 text-sm">One WhatsApp thread from first message to final delivery — no lost emails.</p>
+                    </div>
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                        <div class="inline-block p-4 bg-hof-gold/10 rounded-full">
+                            <i data-lucide="search" class="w-7 h-7 text-hof-gold"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-hof-charcoal mt-4">Attention to Detail</h3>
+                        <p class="mt-2 text-gray-600 text-sm">From framing to final cut, the small details get the same care as the big moments.</p>
+                    </div>
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                        <div class="inline-block p-4 bg-hof-gold/10 rounded-full">
+                            <i data-lucide="wallet" class="w-7 h-7 text-hof-gold"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-hof-charcoal mt-4">Fair, Transparent Pricing</h3>
+                        <p class="mt-2 text-gray-600 text-sm">You get a clear quote before anything is booked — no surprise costs later.</p>
+                    </div>
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                        <div class="inline-block p-4 bg-hof-gold/10 rounded-full">
+                            <i data-lucide="sparkles" class="w-7 h-7 text-hof-gold"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-hof-charcoal mt-4">High-Quality Delivery</h3>
+                        <p class="mt-2 text-gray-600 text-sm">Every project is delivered in formats ready for social, web or broadcast use.</p>
+                    </div>
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+                        <div class="inline-block p-4 bg-hof-gold/10 rounded-full">
+                            <i data-lucide="users" class="w-7 h-7 text-hof-gold"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-hof-charcoal mt-4">Creative Direction Included</h3>
+                        <p class="mt-2 text-gray-600 text-sm">We help plan the shoot, not just operate the camera on the day.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Consultation Section ===== -->
+        <section id="consultation" class="py-24 bg-hof-charcoal text-hof-ivory">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-right">
+                    <span class="text-hof-gold font-semibold tracking-widest uppercase">Plan Before You Shoot</span>
+                    <h2 class="text-4xl md:text-5xl font-bold mt-2">Paid Consultation</h2>
+                    <p class="mt-6 text-gray-300 text-lg">
+                        Not ready to book a full production yet? A paid consultation gives you focused, one-on-one
+                        time to plan your content strategy, shot list, or shoot day with LOBAH VISUALS before you
+                        commit to anything bigger.
+                    </p>
+                    <ul class="mt-8 space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-hof-gold mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-300"><span class="text-white font-semibold">What you get:</span> a recorded planning session, a written shot list or content outline, and clear next-step recommendations.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-hof-gold mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-300"><span class="text-white font-semibold">Who it's for:</span> brands, creators and event planners who want expert input before committing to a shoot.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-hof-gold mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-300"><span class="text-white font-semibold">Duration:</span> 45–60 minutes, via call or in person in Lagos.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-hof-gold mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-300"><span class="text-white font-semibold">Pricing:</span> from ₦[XX,XXX] — confirmed on WhatsApp before booking.</span>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/2340000000000" target="_blank" rel="noopener"
+                        class="inline-flex items-center gap-2 mt-10 px-8 py-4 bg-green-500 text-white text-lg font-semibold rounded-full shadow-lg hover:bg-green-600 transition-all transform hover:scale-105">
+                        <i data-lucide="message-circle" class="w-5 h-5"></i>
+                        Book Consultation on WhatsApp
+                    </a>
+                </div>
+                <div data-aos="fade-left" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=900&auto=format&fit=crop" alt="Planning session for a video shoot with LOBAH VISUALS"
+                        class="rounded-3xl shadow-2xl w-full object-cover" loading="lazy" style="height:520px">
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Booking Process Section ===== -->
+        <section id="process" class="pt-32 pb-32 bg-hof-blush/30">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-bold text-hof-charcoal text-center" data-aos="fade-up">
+                    The Booking Process
+                </h2>
+                <p class="text-lg text-gray-600 text-center max-w-2xl mx-auto mt-4" data-aos="fade-up"
+                    data-aos-delay="100">
+                    Simple, transparent, and easy to follow from first message to final delivery.
+                </p>
+
+                <ol class="relative max-w-2xl mx-auto mt-16 border-l-2 border-hof-gold/40 ml-4">
+                    <li class="relative mb-10 ml-8" data-aos="fade-up" data-aos-delay="100">
+                        <span class="absolute flex items-center justify-center w-10 h-10 bg-hof-gold rounded-full -left-5 text-white font-bold">1</span>
+                        <h3 class="text-xl font-bold text-hof-charcoal">Contact via WhatsApp</h3>
+                        <p class="mt-1 text-gray-600">Send a message with what you need — we usually reply the same day.</p>
+                    </li>
+                    <li class="relative mb-10 ml-8" data-aos="fade-up" data-aos-delay="150">
+                        <span class="absolute flex items-center justify-center w-10 h-10 bg-hof-gold rounded-full -left-5 text-white font-bold">2</span>
+                        <h3 class="text-xl font-bold text-hof-charcoal">Discuss the Project</h3>
+                        <p class="mt-1 text-gray-600">We talk through your goals, date, location and the style you're going for.</p>
+                    </li>
+                    <li class="relative mb-10 ml-8" data-aos="fade-up" data-aos-delay="200">
+                        <span class="absolute flex items-center justify-center w-10 h-10 bg-hof-gold rounded-full -left-5 text-white font-bold">3</span>
+                        <h3 class="text-xl font-bold text-hof-charcoal">Receive a Quotation</h3>
+                        <p class="mt-1 text-gray-600">You get a clear, itemized quote with no hidden costs before committing.</p>
+                    </li>
+                    <li class="relative mb-10 ml-8" data-aos="fade-up" data-aos-delay="250">
+                        <span class="absolute flex items-center justify-center w-10 h-10 bg-hof-gold rounded-full -left-5 text-white font-bold">4</span>
+                        <h3 class="text-xl font-bold text-hof-charcoal">Schedule the Session</h3>
+                        <p class="mt-1 text-gray-600">Once confirmed, we lock in your date on the calendar with a deposit.</p>
+                    </li>
+                    <li class="relative mb-10 ml-8" data-aos="fade-up" data-aos-delay="300">
+                        <span class="absolute flex items-center justify-center w-10 h-10 bg-hof-gold rounded-full -left-5 text-white font-bold">5</span>
+                        <h3 class="text-xl font-bold text-hof-charcoal">Production</h3>
+                        <p class="mt-1 text-gray-600">We show up, set up, and film — with creative direction guiding every shot.</p>
+                    </li>
+                    <li class="relative mb-10 ml-8" data-aos="fade-up" data-aos-delay="350">
+                        <span class="absolute flex items-center justify-center w-10 h-10 bg-hof-gold rounded-full -left-5 text-white font-bold">6</span>
+                        <h3 class="text-xl font-bold text-hof-charcoal">Editing</h3>
+                        <p class="mt-1 text-gray-600">Footage is cut, color-graded and polished into your final story.</p>
+                    </li>
+                    <li class="relative ml-8" data-aos="fade-up" data-aos-delay="400">
+                        <span class="absolute flex items-center justify-center w-10 h-10 bg-hof-gold rounded-full -left-5 text-white font-bold">7</span>
+                        <h3 class="text-xl font-bold text-hof-charcoal">Delivery</h3>
+                        <p class="mt-1 text-gray-600">You receive your final files, ready for social, web or broadcast.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ===== Testimonials Section ===== -->
+        <section id="testimonials" class="py-24 bg-white">
+            <div class="container mx-auto px-6" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-hof-charcoal text-center">
+                    Words From Our Clients
+                </h2>
+                <p class="text-center text-gray-500 mt-4 max-w-xl mx-auto text-sm">
+                    Placeholder testimonials below — real client reviews will replace these as they come in.
+                </p>
+
+                <!-- Testimonial Slider -->
+                <div id="testimonial-slider" class="relative max-w-3xl mx-auto mt-12 text-center h-56">
+                    <!-- Slide 1 -->
+                    <div
+                        class="testimonial-item absolute top-0 left-0 w-full h-full opacity-0 transition-opacity duration-1000">
+                        <p class="text-2xl font-medium text-gray-700 italic">
+                            "Client testimonial placeholder — real feedback from event coverage clients will appear
+                            here."
+                        </p>
+                        <span class="block text-hof-gold font-bold text-lg mt-6">— Placeholder, Event Client</span>
+                        <span class="block text-xs text-gray-400 mt-1 uppercase tracking-wide">Sample review · awaiting real testimonial</span>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div
+                        class="testimonial-item absolute top-0 left-0 w-full h-full opacity-0 transition-opacity duration-1000">
+                        <p class="text-2xl font-medium text-gray-700 italic">
+                            "Client testimonial placeholder — real feedback from a brand content client will appear
+                            here."
+                        </p>
+                        <span class="block text-hof-gold font-bold text-lg mt-6">— Placeholder, Brand Client</span>
+                        <span class="block text-xs text-gray-400 mt-1 uppercase tracking-wide">Sample review · awaiting real testimonial</span>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div
+                        class="testimonial-item absolute top-0 left-0 w-full h-full opacity-0 transition-opacity duration-1000">
+                        <p class="text-2xl font-medium text-gray-700 italic">
+                            "Client testimonial placeholder — real feedback from a fashion content client will appear
+                            here."
+                        </p>
+                        <span class="block text-hof-gold font-bold text-lg mt-6">— Placeholder, Fashion Client</span>
+                        <span class="block text-xs text-gray-400 mt-1 uppercase tracking-wide">Sample review · awaiting real testimonial</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FAQ Section ===== -->
+        <section id="faq" class="py-24 bg-hof-ivory">
+            <div class="container mx-auto px-6 max-w-3xl">
+                <h2 class="text-4xl md:text-5xl font-bold text-hof-charcoal text-center" data-aos="fade-up">
+                    Frequently Asked Questions
+                </h2>
+                <div class="mt-12 space-y-4">
+                    <details class="group bg-white rounded-2xl shadow-md p-6" data-aos="fade-up" data-aos-delay="50">
+                        <summary class="flex items-center justify-between cursor-pointer font-bold text-hof-charcoal text-lg list-none">
+                            How do I book?
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-hof-gold transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <p class="mt-3 text-gray-600">Message us on WhatsApp with your project details. We'll discuss your needs, send a quotation, and schedule your session once confirmed.</p>
+                    </details>
+                    <details class="group bg-white rounded-2xl shadow-md p-6" data-aos="fade-up" data-aos-delay="100">
+                        <summary class="flex items-center justify-between cursor-pointer font-bold text-hof-charcoal text-lg list-none">
+                            How much do you charge?
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-hof-gold transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <p class="mt-3 text-gray-600">Pricing depends on the type of project, duration and deliverables. We'll give you a clear, itemized quote on WhatsApp after a short discussion.</p>
+                    </details>
+                    <details class="group bg-white rounded-2xl shadow-md p-6" data-aos="fade-up" data-aos-delay="150">
+                        <summary class="flex items-center justify-between cursor-pointer font-bold text-hof-charcoal text-lg list-none">
+                            Do you travel?
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-hof-gold transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <p class="mt-3 text-gray-600">Yes — we cover events and shoots across Lagos, with travel for out-of-state projects available on request.</p>
+                    </details>
+                    <details class="group bg-white rounded-2xl shadow-md p-6" data-aos="fade-up" data-aos-delay="200">
+                        <summary class="flex items-center justify-between cursor-pointer font-bold text-hof-charcoal text-lg list-none">
+                            How long does editing take?
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-hof-gold transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <p class="mt-3 text-gray-600">Turnaround depends on project scope — short-form social content is typically faster than full event highlight reels or documentaries. We'll confirm a timeline before you book.</p>
+                    </details>
+                    <details class="group bg-white rounded-2xl shadow-md p-6" data-aos="fade-up" data-aos-delay="250">
+                        <summary class="flex items-center justify-between cursor-pointer font-bold text-hof-charcoal text-lg list-none">
+                            Do you require a deposit?
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-hof-gold transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <p class="mt-3 text-gray-600">Yes, a deposit secures your date on the calendar. The remaining balance is due on or before delivery, as agreed during booking.</p>
+                    </details>
+                    <details class="group bg-white rounded-2xl shadow-md p-6" data-aos="fade-up" data-aos-delay="300">
+                        <summary class="flex items-center justify-between cursor-pointer font-bold text-hof-charcoal text-lg list-none">
+                            Can I reschedule?
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-hof-gold transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <p class="mt-3 text-gray-600">Life happens — message us as early as possible on WhatsApp and we'll do our best to find a new date that works for both sides.</p>
+                    </details>
+                    <details class="group bg-white rounded-2xl shadow-md p-6" data-aos="fade-up" data-aos-delay="350">
+                        <summary class="flex items-center justify-between cursor-pointer font-bold text-hof-charcoal text-lg list-none">
+                            Can I book a consultation online?
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-hof-gold transition-transform group-open:rotate-180"></i>
+                        </summary>
+                        <p class="mt-3 text-gray-600">Yes — paid consultations can be done over a call, so you don't need to be in Lagos to plan your shoot with us.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Contact Section ===== -->
+        <section id="contact" class="py-24 bg-hof-ivory">
+            <div class="container mx-auto px-6" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-hof-charcoal text-center">
+                    Let's Start the Conversation
+                </h2>
+                <p class="text-lg text-gray-600 text-center max-w-2xl mx-auto mt-4">
+                    The fastest way to book or ask a question is WhatsApp — message us and we'll reply directly.
+                </p>
+
+                <div class="text-center mt-10">
+                    <a href="https://wa.me/2340000000000" target="_blank" rel="noopener"
+                        class="inline-flex items-center gap-3 px-12 py-5 bg-green-500 text-white text-xl font-semibold rounded-full shadow-lg hover:bg-green-600 transition-all transform hover:scale-105">
+                        <i data-lucide="message-circle" class="w-6 h-6"></i>
+                        Chat on WhatsApp
+                    </a>
+                </div>
+
+                <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto mt-16 text-center">
+                    <a href="tel:+2340000000000" class="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow">
+                        <i data-lucide="phone" class="w-6 h-6 text-hof-gold mx-auto"></i>
+                        <span class="block mt-3 font-semibold text-hof-charcoal">Phone</span>
+                        <span class="block text-sm text-gray-500 mt-1">+234 000 000 0000</span>
+                    </a>
+                    <a href="https://instagram.com/lobahvisuals" target="_blank" rel="noopener" class="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow">
+                        <i data-lucide="instagram" class="w-6 h-6 text-hof-gold mx-auto"></i>
+                        <span class="block mt-3 font-semibold text-hof-charcoal">Instagram</span>
+                        <span class="block text-sm text-gray-500 mt-1">@lobahvisuals</span>
+                    </a>
+                    <a href="https://tiktok.com/@lobahvisuals" target="_blank" rel="noopener" class="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow">
+                        <i data-lucide="music-2" class="w-6 h-6 text-hof-gold mx-auto"></i>
+                        <span class="block mt-3 font-semibold text-hof-charcoal">TikTok</span>
+                        <span class="block text-sm text-gray-500 mt-1">@lobahvisuals</span>
+                    </a>
+                    <a href="mailto:hello@lobahvisuals.com" class="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow">
+                        <i data-lucide="mail" class="w-6 h-6 text-hof-gold mx-auto"></i>
+                        <span class="block mt-3 font-semibold text-hof-charcoal">Email</span>
+                        <span class="block text-sm text-gray-500 mt-1">hello@lobahvisuals.com</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="bg-hof-charcoal text-hof-ivory pt-16 relative">
+        <!-- Decorative SVG Border -->
+        <div class="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
+            <svg class="relative block w-full h-[60px] md:h-[100px]" data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0 L0,20 Q600,100 1200,20 L1200,0 Z" class="fill-white"></path>
+            </svg>
+        </div>
+
+        <div class="container mx-auto px-6">
+            <!-- Top: Quick Links & WhatsApp CTA -->
+            <div class="grid md:grid-cols-3 gap-12 pb-16">
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-xl font-bold mb-4">LOBAH VISUALS</h4>
+                    <nav class="grid grid-cols-2 gap-2" aria-label="Footer navigation">
+                        <a href="#about" data-scroll class="hover:text-hof-gold transition-colors">About</a>
+                        <a href="#portfolio" data-scroll class="hover:text-hof-gold transition-colors">Portfolio</a>
+                        <a href="#services" data-scroll class="hover:text-hof-gold transition-colors">Services</a>
+                        <a href="#process" data-scroll class="hover:text-hof-gold transition-colors">Booking Process</a>
+                        <a href="#faq" data-scroll class="hover:text-hof-gold transition-colors">FAQ</a>
+                        <a href="#contact" data-scroll class="hover:text-hof-gold transition-colors">Contact</a>
+                        <a href="privacy-policy.html" class="hover:text-hof-gold transition-colors">Privacy Policy</a>
+                        <a href="terms.html" class="hover:text-hof-gold transition-colors">Terms</a>
+                    </nav>
+                </div>
+
+                <!-- WhatsApp CTA -->
+                <div class="md:col-span-2">
+                    <h4 class="text-xl font-bold mb-4">Ready to Book?</h4>
+                    <p class="text-gray-400 mb-4">
+                        Skip the forms — message us directly on WhatsApp and we'll get your project moving today.
+                    </p>
+                    <a href="https://wa.me/2340000000000" target="_blank" rel="noopener"
+                        class="inline-flex items-center gap-2 px-6 py-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition-colors">
+                        <i data-lucide="message-circle" class="w-5 h-5"></i>
+                        Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Bottom: Copyright & Socials -->
+            <div class="bg-black/20 py-8">
+                <div
+                    class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                    <span class="text-gray-400 text-sm">
+                        © <span id="current-year"></span> LOBAH VISUALS. All Rights Reserved.
+                    </span>
+                    <div class="flex space-x-5 mt-4 md:mt-0">
+                        <a href="https://instagram.com/lobahvisuals" target="_blank" rel="noopener" aria-label="LOBAH VISUALS on Instagram" class="text-gray-400 hover:text-hof-gold transition-colors">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://tiktok.com/@lobahvisuals" target="_blank" rel="noopener" aria-label="LOBAH VISUALS on TikTok" class="text-gray-400 hover:text-hof-gold transition-colors">
+                            <i data-lucide="music-2" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://wa.me/2340000000000" target="_blank" rel="noopener" aria-label="Message LOBAH VISUALS on WhatsApp" class="text-gray-400 hover:text-hof-gold transition-colors">
+                            <i data-lucide="message-circle" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== Scroll to Top Button ===== -->
+    <a href="#hero" data-scroll id="scrollTopBtn" aria-label="Scroll to top"
+        class="fixed bottom-8 right-8 z-50 p-4 bg-hof-gold text-white rounded-full shadow-lg transition-all duration-300 opacity-0 invisible transform hover:scale-110 hover:shadow-xl">
+        <i data-lucide="arrow-up" class="w-6 h-6"></i>
+    </a>
+
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
